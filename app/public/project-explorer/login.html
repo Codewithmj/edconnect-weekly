@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Login</title>
+</head>
+<body>
+     <!-- Navigation -->
+     <header>
+     <nav class="navbar navbar-expand navbar-dark bg-primary">
+        <a class="navbar-brand" href="index.html">Project Explorer</a>        
+          <form class="form-inline" name="searchForm" method="GET" action="search.html">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search Projects" name="search">
+            <button class="btn btn-outline-light" type="submit">Search</button>
+          </form>
+        <div class="mr-auto navbar-nav">
+            <a href="createproject.html" class="nav-link">Submit</a>
+        </div>
+        <div class="navbar-nav">
+            <a class="nav-link" href="register.html">Sign Up</a>
+             <a class="nav-link" href="login.html">Login</a>
+        </div>              
+</nav>
+</header>
+ <!-- Login Form -->
+ <section>
+    <div class="my-3 container">
+        <div class="my-5 w-75 mx-auto row">
+            <div class="col">
+                <h3>Login</h3>
+                <form action="/login" method="POST">
+                    <div class="form-group">
+                      <label class="form-label">Email address</label>
+                      <input type="email" class="form-control" placeholder="Enter email">
+                    </div>
+                    <div class="form-group">
+                      <label class="form-label">Password</label>
+                      <input type="password" class="form-control" placeholder="Password" >
+                    </div>
+                  
+                  </form>
+            </div>
+        </div>
+    </div>
+  </section>
+  <!-- *Footer -->
+  <footer class="container">
+    <nav class="navbar navbar-expand navbar-light bg-light">
+         <div class="justify-content-end navbar-collapse collapse">
+             <span class="navbar-text">Project Explorer © 2020· <a href="https://edconnect.ng/" target="_blank">Edconnect</a></span>
+         </div>
+     </nav>
+ </footer>
+</body>
+</html>
